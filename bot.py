@@ -26,7 +26,7 @@ logger.addHandler(handler)
 class Bot(commands.AutoShardedBot):
     def __init__(self, *, application_id: int, **kwargs) -> None:
         intents = discord.Intents.default()
-        intents.message_content = True
+        #intents.message_content = True
 
         super().__init__(
             command_prefix='...',
