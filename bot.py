@@ -52,10 +52,10 @@ class Bot(commands.AutoShardedBot):
     @tasks.loop(minutes=10)
     async def change_status(self):
         await self.change_presence(
-            status=discord.Status.dnd,
+            status=discord.Status.online,
             activity=discord.Activity(
                 type=discord.ActivityType.playing,
-                name='in Maintenance'
+                name='in v2.0 Beta'
             )
         )
 
