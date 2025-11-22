@@ -46,7 +46,7 @@ class Help(commands.Cog):
         )
         embed.set_author(
             name = self.bot.user.name,
-            icon_url = self.bot.user.avatar
+            icon_url = self.bot.user.display_avatar.url
         )
         embed.add_field(
             name='General',

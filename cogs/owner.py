@@ -80,7 +80,7 @@ class Owner(commands.GroupCog, group_name='dev'):
 
         embed = discord.Embed(timestamp=interaction.created_at)
 
-        cb = lambda c: f"```py\n{c[5980]}\n```"
+        cb = lambda c: f"```py\n{c[:2000]}\n```"
 
         try:
             import_expression.exec(to_compile, env)

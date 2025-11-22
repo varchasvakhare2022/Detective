@@ -43,7 +43,7 @@ class TicTacToeButton(discord.ui.Button['TicTacToe']):
             view.current_player = view.O
             content = "It is now O's turn"
         else:
-            self.style = discord.ButtonStyle.success
+            self.style = discord.ButtonStyle.green
             self.label = 'O'
             self.disabled = True
             view.board[self.y][self.x] = view.O

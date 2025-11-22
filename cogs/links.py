@@ -7,7 +7,6 @@ import io
 import contextlib
 import os
 import random
-import inspect
 import json
 
 import discord
